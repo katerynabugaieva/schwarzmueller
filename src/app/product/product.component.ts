@@ -7,5 +7,9 @@ import { Component, Input, EventEmitter, Output } from "@angular/core";
 })
 export class ProductComponent {
   @Input() productName: string;
-  onClicked() {}
+  @Output() productClicked = new EventEmitter();
+
+  onClicked() {
+    this.productClicked.emit();
+  }
 }
