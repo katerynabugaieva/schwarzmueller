@@ -1,7 +1,7 @@
-import { Subject } from "rxjs";
+import { Subject } from 'rxjs';
 
 export class ProductsService {
-  private products = ["A book"];
+  private products = ['A book'];
   productsUpdated = new Subject();
 
   addProduct(productName: string) {
