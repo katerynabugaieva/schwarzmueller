@@ -31,11 +31,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
       this.productsService.addProduct(form.value.productName);
     }
   }
-  /*
+
   onRemoveProduct(productName: string) {
     this.products = this.products.filter(p => p !== productName);
   }
-  */
 
   ngOnDestroy() {
     this.productSubscription.unsubscribe();
